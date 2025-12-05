@@ -1,6 +1,13 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import axios from 'axios';
 
+// Configure API base URL for production
+const API_BASE_URL = import.meta.env.PROD 
+  ? import.meta.env.VITE_API_URL || 'https://health-monitor-backend.onrender.com'
+  : 'http://localhost:3000';
+
+axios.defaults.baseURL = API_BASE_URL;
+
 interface AuthContextType {
   token: string | null;
   user: any;

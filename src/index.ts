@@ -18,6 +18,7 @@ app.use(cors({
     'http://localhost:5173',
     'http://localhost:3000',
     'https://health-monitor-app.vercel.app',
+    'https://health-monitor-app-username.vercel.app',  // Replace with YOUR Vercel URL
     'https://*.vercel.app'
   ],
   credentials: true

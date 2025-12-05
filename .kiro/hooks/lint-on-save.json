@@ -1,0 +1,11 @@
+{
+  "name": "Lint Code on Save",
+  "description": "Run ESLint when saving TypeScript/JavaScript files",
+  "trigger": "onFileSave",
+  "filePattern": "**/*.{ts,tsx,js,jsx}",
+  "action": {
+    "type": "command",
+    "command": "npm run lint"
+  },
+  "enabled": false
+}

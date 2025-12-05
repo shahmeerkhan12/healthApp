@@ -1,0 +1,140 @@
+.health-records .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.form-card {
+  margin-bottom: 30px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+}
+
+.records-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.record-card {
+  transition: transform 0.2s;
+}
+
+.record-card:hover {
+  transform: translateY(-2px);
+}
+
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.record-header h3 {
+  color: #667eea;
+  margin: 0;
+}
+
+.record-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-edit {
+  background: #2196f3;
+  color: white;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.btn-delete {
+  background: #f44336;
+  color: white;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.record-body p {
+  margin: 8px 0;
+  color: #666;
+}
+
+.record-body p strong {
+  color: #333;
+  margin-right: 5px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.form-actions .btn-secondary {
+  background: #999;
+  color: white;
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  padding: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #667eea;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #667eea;
+  cursor: pointer;
+  border: none;
+}
+
+.level-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.level-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.level-label {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}

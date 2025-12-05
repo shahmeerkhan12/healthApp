@@ -1,0 +1,37 @@
+.activities .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.activities-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.activity-card {
+  transition: transform 0.2s;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+}
+
+.activity-card h3 {
+  color: #667eea;
+  margin-bottom: 10px;
+}
+
+.activity-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.btn-secondary {
+  background: #2196f3;
+  color: white;
+  margin-top: 10px;
+  width: 100%;
+}
